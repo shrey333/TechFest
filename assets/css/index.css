@@ -1,0 +1,229 @@
+@font-face{
+	font-family:dm ;
+	src: url('dm.woff2') format('woff2')
+}
+@font-face{
+	font-family: lining;
+	src: url('lining.woff2') format('woff2')
+}
+@font-face{
+	font-family: playfair;
+	src: url('playfair.woff2') format('woff2')
+}
+@font-face{
+	font-family: poppins;
+	src: url('poppins.woff2') format('woff2')
+}
+@font-face{
+	font-family: anton;
+	src: url('anton.woff2') format('woff2')
+}
+@font-face{
+	font-family: libre;
+	src: url('libre.woff2') format('woff2')
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: rgb(39, 39, 39);
+}
+a{
+	text-decoration: none;
+}
+.header{
+	font-family: anton;
+	overflow: hidden;
+	padding: 10px 100px;
+	background-color: rgb(39, 39, 39);
+}
+.header a.logo{
+	font-size: 40px;
+	color: white;
+	text-decoration: white underline;
+}
+.logo{
+	font-size: 40px;
+	color: white;
+	font-family: anton;
+	text-decoration: white underline;
+}
+.header a{
+	float: left;
+	font-size: 19px;
+	color: white;
+}
+.header a:hover{
+	color: #ff0066;
+}
+.header-right{
+	font-family: anton;
+	float: right;
+}
+.header-right a{
+	padding: 10px;
+}
+.main{
+	overflow: hidden;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+.mainheading{
+	color: white;
+	font-family: lining;
+	font-size: 100px;
+}
+.heading{
+	color: white;
+	font-family: poppins;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+hr{
+	width: 80%;
+}
+.title{
+	color: #ff0066;
+	font-family: anton;
+	font-size: 25px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: 30px 50px;
+}
+
+.box{
+	height: 300px;
+	padding: 25px;
+	font-family: libre;
+	color: white;
+	background-color: #444;
+	border-radius: 2px;
+	font-size: 20px;
+}
+.box a{
+	text-decoration: none;
+	color: white;
+}
+.box:hover{
+	border-bottom: 5px solid #ff0066;
+}
+.grid i{
+	color: #ff0066;
+	padding: 25px;
+}
+footer{
+	height: 100px;
+}
+.grid1{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	padding: 20px 50px;
+}
+.items{
+	padding: 10px;
+	text-align: center;
+}
+.text{
+	font-family: libre;
+	font-size: 15px;
+	color: white;
+}
+.items i{
+	color: #ff0066;
+	padding: 5px;
+}
+.items input[type=email]{
+	padding: 15px;
+	color: white;
+	background-color: rgb(39, 39, 39);
+	width: 280px;
+	font-size: 15px;
+	border: 3px solid white;
+	font-family: libre;
+}
+.items input[type=submit]{
+	border: 3px solid white;
+	padding: 5px;
+	color: white;
+	background-color: rgb(39, 39, 39);
+	width: 280px;
+	margin: 10px;
+	font-size: 25px;
+	font-family: libre;
+}
+.khokhu{
+	text-align: center;
+}
+.khokhu input[type=password],input[type=text]{
+	padding:10px;
+	border: 3px solid white;
+	color: white;
+	font-size: 25px;
+	font-family: libre;
+	background-color: rgb(39, 39, 39);
+	margin: 10px;
+	width: 400px;
+}
+.khokhu{
+	padding-top: 100px;
+}
+.khokhu input[type=submit]{
+	border: 3px solid white;
+	padding: 10px;
+	color: white;
+	background-color: rgb(39, 39, 39);
+	width: 480px;
+	margin: 10px;
+	font-size: 25px;
+	font-family: libre;
+}
+.khokhu i{
+	margin: 10px;
+	color: #ff0066;
+	border: 3px solid white;
+	padding: 8px;
+}
+.rules .text{
+	text-align: left;
+}
+.container input[type=text], textarea, select, input[type=date], input[type=datetime-local], input[type=tel], input[type=email]{
+	text-align: center;
+	border: 3px solid white;
+	padding: 10px;
+	font-size: 20px;
+	font-family: libre;
+	margin: 10px;
+	width: 70%;
+	color: white;
+	background-color: rgb(39, 39, 39);
+}
+.container{
+	text-align: center;
+	justify-content: center;
+}
+.container input[type=submit]{
+	border: 3px solid white;
+	padding: 10px;
+	color: white;
+	background-color: rgb(39, 39, 39);
+	width: 70%;
+	margin: 10px;
+	font-size: 20px;
+	font-family: libre;
+}
+.jj{
+	border: 3px solid white;
+	padding: 10px;
+	color: white;
+	background-color: rgb(39, 39, 39);
+	margin: 10px 200px;
+	font-size: 20px;
+	font-family: libre;
+}
