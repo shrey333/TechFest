@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.http import HttpResponseRedirect
 from django.views import generic
+from django.core.files.storage import FileSystemStorage
 from django.template.context_processors import csrf
 from dbapp.models import *
 from django.contrib import auth
@@ -65,12 +66,15 @@ def registerevent(request):
     return render(request, 'registerevent.html', c)
 
 
-@login_required(login_url='/login/')
+@login_required(login_url='login/')
 def store(request):
     dept = Department(request.POST.get('dept'))
+    image = request.FILES['image']
+    fs = FileSystemStorage()
+    fs.save(image.name, image)
     e = Event(event_name=request.POST.get('event-name'),
               department=dept,
-              img=request.POST.get('image'),
+              img=request.FILES['image'],
               problem_statement=request.POST.get('statement'),
               event_date=request.POST.get('eventdate'),
               people_required=request.POST.get('requiredppl'),

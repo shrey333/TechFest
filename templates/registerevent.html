@@ -22,7 +22,7 @@
 		</div>
 	</header>
 	<hr>
-	<form action="/store/" method="POST">{% csrf_token %}
+    <form action="/store/" method="POST" enctype="multipart/form-data">{% csrf_token %}
 		<div class="container">
 			<div class="title">
 				<br><br>Register a New Event<br><br>
@@ -52,8 +52,9 @@
 				<input type="text" placeholder="Enter amount of fees" name="fees">
 			</div>
             <div>
-				<input type="text" placeholder="Enter suitable image for event" name="image" value="Enter suitable image for event" onfocus="(this.type='file')" onblur="(this.type='text')">
-			</div>
+                <!--input type="text" placeholder="Enter suitable image for event" name="image" value="Enter suitable image for event" onfocus="(this.type='file')" onblur="(this.type='text')"-->
+                <input type="file" name="image">
+            </div>
 			<div>
 				<textarea placeholder="Enter rules with bullentin for event (e.g. 1. some rule 2.some rule)" name="rules" required></textarea>
 			</div>
