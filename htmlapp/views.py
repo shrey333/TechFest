@@ -19,10 +19,12 @@ def eventlist(request):
     des = Department.objects.get(department=request.GET.get('dept')).description
     dept = Department.objects.get(department=request.GET.get('dept')).department
     evl = []
+    img = []
     for i in alldept:
         if i.department.department == dept:
+            img.append(i.img)
             evl.append(i.event_name)
-    return render(None, 'eventlist.html', {'evl': evl, 'dept': dept, 'des': des})
+    return render(None, 'eventlist.html', {'evl': evl, 'img': img, 'dept': dept, 'des': des})
 
 
 def event(request):
@@ -71,7 +73,9 @@ def store(request):
     dept = Department(request.POST.get('dept'))
     image = request.FILES['image']
     fs = FileSystemStorage()
-    fs.save(image.name, image)
+    name = fs.save(image.name, image)
+    url = fs.url(name)
+    print(url)
     e = Event(event_name=request.POST.get('event-name'),
               department=dept,
               img=request.FILES['image'],
