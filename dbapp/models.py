@@ -1,6 +1,10 @@
 from django.db import models
 
 
+class Newsletter(models.Model):
+    email = models.EmailField(primary_key=True)
+
+
 class Department(models.Model):
     department = models.CharField(max_length=40, primary_key=True)
     description = models.CharField(max_length=2000)

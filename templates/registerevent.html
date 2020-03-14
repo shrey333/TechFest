@@ -11,24 +11,88 @@
 <body>
 	<header>
 		<div class="header">
-			<a href="/index/" class="logo">TechFest<font color="#ff0066">.</font></a>
+            <a href="/" class="logo">TechFest<font color="#ff0066">.</font></a>
 			<div class="header-right">
-				<a href="/index/#Team" class="an">Team</a>
-				<a href="/index/#Sponser" class="an">Sponser</a>
-				<a href="/index/#Department" class="an">Department</a>
-				<a href="/index/#AboutUs" class="an">About Us</a>
+                <a href="/#Team" class="an">Team</a>
+                <a href="/#Sponser" class="an">Sponser</a>
+                <a href="/#Department" class="an">Department</a>
+                <a href="/#AboutUs" class="an">About Us</a>
 				<a href="#ContactUs" class="an">Contact Us</a>
 			</div>
 		</div>
 	</header>
 	<hr>
+    {% if null %}
+        <div class="container">
+            <div class="title">
+                <br><br>No registration have done for this event<br><br>
+            </div>
+        </div>
+    {% endif %}
+    {% if p %}
+        <div class="container">
+            <table>
+                <tr>
+                    <td>Participant id</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Birth Date</td>
+                    <td>Gender</td>
+                    <td>Department</td>
+                    <td>College Name</td>
+                    <td>Mobile Number</td>
+                    <td>Email ID</td>
+                </tr>
+                {% for i in p %}
+                    <tr>
+                        <td>{{ i.participant_id }}</td>
+                        <td>{{ i.firstname }}</td>
+                        <td>{{ i.lastname }}</td>
+                        <td>{{ i.birthdate }}</td>
+                        <td>{{ i.gender }}</td>
+                        <td>{{ i.department }}</td>
+                        <td>{{ i.college_name }}</td>
+                        <td>{{ i.mobile }}</td>
+                        <td>{{ i.email }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% endif %}
+    {% if msg %}
+        <div class="container">
+            <div class="title">{{ msg }}</div>
+        </div>
+    {% endif %}
+    {% if registeredemail %}
+        <form action="/mail/" method="POST">{% csrf_token %}
+            <div class="container">
+                <div class="heading">Enter Email subject and body</div>
+                <textarea name="subject" placeholder="Enter Subject"></textarea>
+                <textarea name="body" placeholder="Enter Email body"></textarea>
+                <input type="hidden" name="event" value="{{ registeredemail }}">
+                <input type="submit" name="registered" value="Send">
+            </div>
+        </form>
+    {% endif %}
+    {% if newsletter %}
+        <form action="/mail/" method="POST">{% csrf_token %}
+            <div class="container">
+                <div class="heading">Enter Email subject and body</div>
+                <textarea name="subject" placeholder="Enter Subject"></textarea>
+                <textarea name="body" placeholder="Enter Email body"></textarea>
+                <input type="submit" name="Newsletter" value="Send">
+            </div>
+        </form>
+    {% endif %}
+    {% if register %}
     <form action="/store/" method="POST" enctype="multipart/form-data">{% csrf_token %}
 		<div class="container">
 			<div class="title">
 				<br><br>Register a New Event<br><br>
 			</div>
 			<div>
-				<select name="dept" aria-placeholder="Select Department">
+                <select name="dept" aria-placeholder="Select Department" required>
 					<option name="" disabled selected>Select Department</option>
 					<option name="CE and IT Department" value="CE and IT Department">CE and IT Department</option>
 					<option name="Chemical Department" value="Chemical Department">Chemical Department</option>
@@ -43,17 +107,18 @@
 				<textarea placeholder="Enter problem statement for your event" name="statement" required></textarea>
 			</div>
 			<div>
-				<input type="text" name="eventdate" placeholder="Enter event date and time" onfocus="(this.type='datetime-local')" onblur="(this.type='text')">
+                <input type="text" name="eventdate" placeholder="Enter event date and time"
+                       onfocus="(this.type='datetime-local')" onblur="(this.type='text')" required>
 			</div>
 			<div>
 				<input type="text" placeholder="Enter number of people required for this event" name="requiredppl" required>
 			</div>
 			<div>
-				<input type="text" placeholder="Enter amount of fees" name="fees">
+                <input type="text" placeholder="Enter amount of fees" name="fees" required>
 			</div>
             <div>
                 <!--input type="text" placeholder="Enter suitable image for event" name="image" value="Enter suitable image for event" onfocus="(this.type='file')" onblur="(this.type='text')"-->
-                <input type="file" name="image">
+                <input type="file" name="image" required>
             </div>
 			<div>
 				<textarea placeholder="Enter rules with bullentin for event (e.g. 1. some rule 2.some rule)" name="rules" required></textarea>
@@ -63,11 +128,12 @@
 			</div>
 		</div>
 	</form>
+    {% endif %}
 	<hr>
 	<footer>
 		<div class="grid1">
 			<div class="items">
-				<a href="/index/" class="logo">TechFest<font color="#ff0066">.</font></a><br><br>
+                <a href="/" class="logo">TechFest<font color="#ff0066">.</font></a><br><br>
 				<a href="http://twitter.com"><i class='fab fa-twitter-square fa-1.5x'></i></a>
 				<a href="http://facebook.com"><i class='fab fa-facebook-square fa-1.5x'></i></a>
 				<a href="http://youtube.com"><i class='fab fa-youtube fa-1.5x'></i></a>
@@ -77,9 +143,11 @@
 			</div>
 			<div class="items">
 				<span class="title" id="ContactUs">Contact Us<br><br></span>
-				<span class="text"><i class='fas fa-map-marker-alt fa-2x'></i><br>Dharmsinh Desai University,<br>
-					College Road,<br>
-					Nadiad-387001.</span>
+                <a href="https://www.google.com/maps/place/DHARMSINH+DESAI+UNIVERSITY/@22.6802426,72.87801,17z/data=!3m1!4b1!4m5!3m4!1s0x395e5adf2c171355:0xe1e974ce083657fb!8m2!3d22.6802377!4d72.8801987">
+                    <span class="text"><i class='fas fa-map-marker-alt fa-2x'></i><br>Dharmsinh Desai University,<br>
+                        College Road,<br>
+                        Nadiad-387001.</span>
+                </a>
 				<span class="text"><br><br><i class='fas fa-phone-alt fa-2x'></i><br>+91 9876543210<br><br></span>
 				<span class="text"><i class='fas fa-at fa-2x'></i><br>Someone@example.com<br><br><br><br><br></span>
 			</div>

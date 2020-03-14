@@ -11,5 +11,8 @@ urlpatterns = [
     url(r'^registerevent/$', views.registerevent),
     url(r'^store/$', views.store),
     url(r'^auth/$', views.auth_view),
-    url(r'^storepart/$', views.storepart)
+    url(r'^storepart/$', views.storepart),
+    url(r'^intermediate/$', views.intermediate),
+    url(r'^subscribe/$', views.subscribe),
+    url(r'^mail/$', views.mail),
 ]

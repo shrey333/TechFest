@@ -8,19 +8,19 @@
     <body>
         <header>
 			<div class="header">
-				<a href="/index/" class="logo">TechFest<font color="#ff0066">.</font></a>
+                <a href="/" class="logo">TechFest<font color="#ff0066">.</font></a>
 				<div class="header-right">
-					<a href="/index/#Team" class="an">Team</a>
-					<a href="/index/#Sponser" class="an">Sponser</a>
-					<a href="/index/#Department" class="an">Department</a>
-					<a href="/index/#AboutUs" class="an">About Us</a>
+                    <a href="/#Team" class="an">Team</a>
+                    <a href="/#Sponser" class="an">Sponser</a>
+                    <a href="/#Department" class="an">Department</a>
+                    <a href="/#AboutUs" class="an">About Us</a>
 					<a href="#ContactUs" class="an">Contact Us</a>
 				</div>
 			</div>
 		</header>
         <hr>
         <br>
-        <form action="/storepart/" method="POST">
+        <form action="/storepart/" method="POST">{% csrf_token %}
             <div class="container">
                 <span class="heading">
                     <span class="title">Register Yourself<br></span>Enter only team leader details
@@ -56,6 +56,19 @@
                 <div>
                     <input type="email" name="eid" placeholder="Enter your email id" required>
                 </div>
+                <div class="title">
+                    <br><br>Select Payment method<br><br>
+                </div>
+                <div class="jj">
+                    <input type="radio" name="method" value="UPI"> UPI
+                    <input type="radio" name="method" value="Online Banking">Online Banking
+                    <input type="radio" name="method" value="wallet">Wallet
+                    <input type="radio" name="method" value="dc">Debit/Credit Card
+                </div>
+                <div class="jj">
+                    <input type="checkbox" name="check" value="check">Join our Newsletter to get updated.
+                </div>
+                <input type="hidden" name="eventid" value="{{ eventid }}">
                 <div>
                     <input type="submit" name="submit" value="Next">
                 </div>
@@ -66,7 +79,7 @@
         <footer>
 			<div class="grid1">
 				<div class="items">
-					<a href="/index/" class="logo">TechFest<font color="#ff0066">.</font></a><br><br>
+                    <a href="/" class="logo">TechFest<font color="#ff0066">.</font></a><br><br>
 					<a href="http://twitter.com"><i class='fab fa-twitter-square fa-1.5x'></i></a>
 					<a href="http://facebook.com"><i class='fab fa-facebook-square fa-1.5x'></i></a>
 					<a href="http://youtube.com"><i class='fab fa-youtube fa-1.5x'></i></a>
@@ -76,9 +89,12 @@
 				</div>
 				<div class="items">
 					<span class="title" id="ContactUs">Contact Us<br><br></span>
-					<span class="text"><i class='fas fa-map-marker-alt fa-2x'></i><br>Dharmsinh Desai University,<br>
-						College Road,<br>
-						Nadiad-387001.</span>
+                    <a href="https://www.google.com/maps/place/DHARMSINH+DESAI+UNIVERSITY/@22.6802426,72.87801,17z/data=!3m1!4b1!4m5!3m4!1s0x395e5adf2c171355:0xe1e974ce083657fb!8m2!3d22.6802377!4d72.8801987">
+                        <span class="text"><i
+                                class='fas fa-map-marker-alt fa-2x'></i><br>Dharmsinh Desai University,<br>
+                            College Road,<br>
+                            Nadiad-387001.</span>
+                    </a>
 					<span class="text"><br><br><i class='fas fa-phone-alt fa-2x'></i><br>+91 9876543210<br><br></span>
 					<span class="text"><i class='fas fa-at fa-2x'></i><br>Someone@example.com<br><br><br><br><br></span>
 				</div>

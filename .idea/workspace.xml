@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff47c4ea-4df7-4fac-a2ea-b405bf104eac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_IlTycfS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_clwHeJV.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_jxwJpPE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/41152_U1568778488.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/3691_Screenshot_20191017-222624_Quickstep.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/3691_Screenshot_20191017-222624_Quickstep_AHnHm0c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/3691_Screenshot_20191017-222624_Quickstep_VVysYo7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/41152_U1568778488.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/Abstract_sunset_22663_rectangle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Shrey.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbapp/migrations/0005_newsletter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/Abstract sunset2792_rectangle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/img/Abstract_sunset2792_rectangle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/intermediate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/updateevent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/why.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/why.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/eventlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eventlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registerevent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registerevent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/why/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/why/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +55,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,9 +71,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/htmlapp/templates" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -135,7 +145,14 @@
       <workItem from="1583820645359" duration="779000" />
       <workItem from="1583931004083" duration="300000" />
       <workItem from="1583939303405" duration="542000" />
-      <workItem from="1583939908440" duration="4218000" />
+      <workItem from="1583939908440" duration="4257000" />
+      <workItem from="1583946223165" duration="397000" />
+      <workItem from="1583947175479" duration="460000" />
+      <workItem from="1583947771899" duration="63000" />
+      <workItem from="1584068778899" duration="7100000" />
+      <workItem from="1584104022787" duration="2045000" />
+      <workItem from="1584120551512" duration="630000" />
+      <workItem from="1584160925635" duration="18384000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583673917812</created>
@@ -151,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583944219707</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit">
+      <created>1583946087578</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583946087579</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
