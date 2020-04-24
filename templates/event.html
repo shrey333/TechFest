@@ -91,8 +91,12 @@
 				</div>
 				<div class="items">
 					<span class="title">Join the Newsletter <br><br></span>
-					<input type="email" name="Newsletter" placeholder="You will get update via this email" required><br>
-					<input type="submit" value="JOIN">
+                    <form action="/subscribe/" method="POST">{% csrf_token %}
+                        <input type="email" name="newsletter" placeholder="You will get update via this email"
+                               required/><br>
+                        <input type="submit" value="JOIN"><br>
+                        <span class="text">{{ message }}</span>
+                    </form>
 				</div>
 			</div>
 		</footer>

@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ff47c4ea-4df7-4fac-a2ea-b405bf104eac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/eventlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eventlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/intermediate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/intermediate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registerevent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registerevent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/success.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +155,7 @@
       <workItem from="1584923830747" duration="69000" />
       <workItem from="1587381047444" duration="3265000" />
       <workItem from="1587455035915" duration="234000" />
-      <workItem from="1587683465078" duration="4290000" />
+      <workItem from="1587683465078" duration="5242000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583673917812</created>
@@ -186,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587687113574</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="first commit">
+      <created>1587688485984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587688485984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
