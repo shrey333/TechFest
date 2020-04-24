@@ -111,6 +111,22 @@ def registerevent(request):
                 event.append(i.event_name)
             return render(request, 'intermediate.html', {'msg': 'you cannot select all for delete', 'event': event})
         else:
+            e = Event.objects.get(event_name=event)
+            id = e.event_id
+            try:
+                r = Participant.objects.get(event_id=id)
+                r = [r]
+                list = []
+                for i in r:
+                    list.append(i.email)
+                send_mail("About Event Cancellation", "Sorry Event " + event + "is canceled due to some "
+                                                                               "circumstances. You will be refunded "
+                                                                               "in two-three working days",
+                          EMAIL_HOST_USER, list, fail_silently=False)
+                msg = 'Emails sent successfully'
+            except Participant.DoesNotExist:
+                msg = None
+            Participant.objects.get(event_id=id).delete()
             Event.objects.get(event_name=event).delete()
             return render(request, 'registerevent.html', {'msg': event + ' Event deleted.'})
     elif request.POST.get('registered'):
@@ -147,6 +163,7 @@ def store(request):
               rules=request.POST.get('rules'), )
     e.save()
     e = Newsletter.objects.all()
+    e = [e]
     list = []
     for i in e:
         list.append(i.email)
@@ -199,26 +216,45 @@ def intermediate(request):
 def mail(request):
     if request.POST.get('registered'):
         event = request.POST.get('event')
-        e = Event.objects.get(event_name=event)
-        id = e.event_id
+        e = None
+        id = None
+        if (event == "all"):
+            print(event)
+        else:
+            e = Event.objects.get(event_name=event)
+            id = e.event_id
         r = None
         try:
-            r = Participant.objects.get(event_id=id)
+            if (event == "all"):
+                r = Participant.objects.all()
+            else:
+                r = Participant.objects.get(event_id=id)
+            r = [r]
             list = []
-            for i in r:
-                list.append(i.email)
-            send_mail(request.POST.get('subject'), request.POST.get('body'), EMAIL_HOST_USER, list, fail_silently=False)
-            msg = 'Emails sent successfully'
+            print(len(r))
+            try:
+                for i in r:
+                    list.append(i.email)
+                send_mail(request.POST.get('subject'), request.POST.get('body'), EMAIL_HOST_USER, list,
+                          fail_silently=False)
+                msg = 'Emails sent successfully'
+            except AttributeError:
+                msg = None
         except Participant.DoesNotExist:
             msg = None
         return render(request, 'intermediate.html', {'msg1': msg})
     else:
         e = Newsletter.objects.all()
+        e = [e]
         list = []
-        for i in e:
-            list.append(i.email)
-        send_mail(request.POST.get('subject'), request.POST.get('body'), EMAIL_HOST_USER, list, fail_silently=False)
-        msg = 'Emails sent successfully'
+        msg = None
+        try:
+            for i in e:
+                list.append(i.email)
+            send_mail(request.POST.get('subject'), request.POST.get('body'), EMAIL_HOST_USER, list, fail_silently=False)
+            msg = 'Emails sent successfully'
+        except AttributeError:
+            msg = 'No Subscribers'
         return render(request, 'intermediate.html', {'msg2': msg})
 
 
