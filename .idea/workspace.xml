@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff47c4ea-4df7-4fac-a2ea-b405bf104eac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/3ZB0c7_K0E8_Full_iI5uwUl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/3ZB0c7_K0E8_Full_mGYA2lw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/3ZB0c7_K0E8_Full_xDKgMKB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/3ZB0c7_K0E8_Full_LWPk1E0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/3ZB0c7_K0E8_Full_nVAPBc9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/3ZB0c7_K0E8_Full_tL85w6K.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/intermediate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/intermediate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/why/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/why/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -157,7 +149,7 @@
       <workItem from="1584923830747" duration="69000" />
       <workItem from="1587381047444" duration="3265000" />
       <workItem from="1587455035915" duration="234000" />
-      <workItem from="1587683465078" duration="8402000" />
+      <workItem from="1587683465078" duration="8686000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583673917812</created>
@@ -208,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587689578962</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="first commit">
+      <created>1587693332246</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587693332246</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
