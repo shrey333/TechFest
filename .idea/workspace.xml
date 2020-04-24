@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff47c4ea-4df7-4fac-a2ea-b405bf104eac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dbapp/migrations/0006_auto_20200424_0520.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbapp/migrations/0007_auto_20200424_0520.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbapp/migrations/0008_auto_20200424_0528.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/3ZB0c7_K0E8_Full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/3ZB0c7_K0E8_Full_bmGIipy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/1550069523388.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/3ZB0c7_K0E8_Full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/3ZB0c7_K0E8_Full_MZaZj2g.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/75274_venom.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_IlTycfS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_clwHeJV.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_jxwJpPE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/41152_U1568778488.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Abstract sunset2792_rectangle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/intermediate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/intermediate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registerevent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registerevent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/updateevent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/updateevent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/why/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/why/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/htmlapp/templates" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -171,7 +149,7 @@
       <workItem from="1584923830747" duration="69000" />
       <workItem from="1587381047444" duration="3265000" />
       <workItem from="1587455035915" duration="234000" />
-      <workItem from="1587683465078" duration="2960000" />
+      <workItem from="1587683465078" duration="4290000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583673917812</created>
@@ -201,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584185494938</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="first commit">
+      <created>1587687113574</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587687113574</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

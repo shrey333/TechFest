@@ -8,6 +8,7 @@ from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from why.settings import EMAIL_HOST_USER
 from django.core.mail import send_mail
+from django.views.decorators.cache import *
 from sendsms import api
 
 
@@ -75,6 +76,7 @@ def auth_view(request):
 
 
 @login_required(login_url='/login/')
+@never_cache
 def registerevent(request):
     if request.POST.get('show'):
         event = request.POST.get('event')
@@ -127,6 +129,7 @@ def registerevent(request):
 
 
 @login_required(login_url='/login/')
+@never_cache
 def store(request):
     dept = Department(request.POST.get('dept'))
     image = request.FILES['image']
@@ -179,6 +182,7 @@ def storepart(request):
 
 
 @login_required(login_url='/login/')
+@never_cache
 def intermediate(request):
     context = Event.objects.all()
     event = []
@@ -191,6 +195,7 @@ def intermediate(request):
 
 
 @login_required(login_url='/login/')
+@never_cache
 def mail(request):
     if request.POST.get('registered'):
         event = request.POST.get('event')
@@ -217,6 +222,8 @@ def mail(request):
         return render(request, 'intermediate.html', {'msg2': msg})
 
 
+@login_required(login_url='/login/')
+@never_cache
 def logout(request):
     auth.logout(request)
     return render(request, 'login.html', None)
