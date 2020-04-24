@@ -5,7 +5,7 @@ from django.core.files.storage import FileSystemStorage
 from django.template.context_processors import csrf
 from dbapp.models import *
 from django.contrib import auth
-from django.contrib.auth.decorators import *
+from django.contrib.auth.decorators import login_required
 from why.settings import EMAIL_HOST_USER
 from django.core.mail import send_mail
 from sendsms import api
@@ -13,11 +13,11 @@ from sendsms import api
 
 def subscribe(request):
     subject = 'Welcome to TechFest 2020'
-    message = 'Thank you to joining us. You will receive regular TechFest 2020 update via this mail.'
+    message = '<h1>Thank you to joining us. You will receive regular TechFest 2020 update via this mail.<h1>'
     recepient = request.POST.get('newsletter')
     e = Newsletter(email=recepient)
     e.save()
-    send_mail(subject, message, EMAIL_HOST_USER, [recepient], fail_silently=False)
+    send_mail(subject, message, EMAIL_HOST_USER, [recepient], fail_silently=False, html_message=message)
     return render(request, 'demo.html', {'message': "You are subscribed"})
 
 
@@ -69,7 +69,7 @@ def auth_view(request):
     user = auth.authenticate(username=username, password=password)
     if user is not None:
         auth.login(request, user)
-        return HttpResponseRedirect('/registerevent/')
+        return HttpResponseRedirect('/intermediate/')
     else:
         return HttpResponseRedirect('/login/')
 
@@ -148,7 +148,7 @@ def store(request):
     for i in e:
         list.append(i.email)
     subject = 'From TechFest 2020'
-    body = 'Hello Folks. New Event is added to ' + dept + ' named ' + request.POST.get(
+    body = 'Hello Folks. New Event is added to ' + request.POST.get('dept') + ' named ' + request.POST.get(
         'event-name') + ' check out at our official website'
     send_mail(subject, body, EMAIL_HOST_USER, list, fail_silently=False)
     msg = 'Emails sent successfully'
@@ -174,10 +174,11 @@ def storepart(request):
     subject = 'Welcome to TechFest 2020'
     message = 'Thank you for participation in TechFest 2020. You will be notified for any changes in event that you ' \
               'registered. '
+    send_mail(subject, message, EMAIL_HOST_USER, [request.POST.get('eid')], fail_silently=False, html_message=message)
     return render(request, 'success.html')
 
 
-@login_required(login_url='login/')
+@login_required(login_url='/login/')
 def intermediate(request):
     context = Event.objects.all()
     event = []
@@ -189,7 +190,7 @@ def intermediate(request):
     return render(request, 'intermediate.html', {'c': c, 'event': event})
 
 
-@login_required(login_url='login/')
+@login_required(login_url='/login/')
 def mail(request):
     if request.POST.get('registered'):
         event = request.POST.get('event')
@@ -214,3 +215,8 @@ def mail(request):
         send_mail(request.POST.get('subject'), request.POST.get('body'), EMAIL_HOST_USER, list, fail_silently=False)
         msg = 'Emails sent successfully'
         return render(request, 'intermediate.html', {'msg2': msg})
+
+
+def logout(request):
+    auth.logout(request)
+    return render(request, 'login.html', None)

@@ -31,5 +31,5 @@ class Participant(models.Model):
     gender = models.CharField(max_length=7)
     department = models.ForeignKey(Department, on_delete=models.CASCADE)
     college_name = models.CharField(max_length=100)
-    mobile = models.IntegerField()
+    mobile = models.BigIntegerField()
     email = models.CharField(max_length=100)

@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^intermediate/$', views.intermediate),
     url(r'^subscribe/$', views.subscribe),
     url(r'^mail/$', views.mail),
+    url(r'^logout/$', views.logout)
 ]

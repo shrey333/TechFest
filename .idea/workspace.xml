@@ -2,25 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff47c4ea-4df7-4fac-a2ea-b405bf104eac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Shrey.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbapp/migrations/0005_newsletter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/Abstract sunset2792_rectangle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/Abstract_sunset2792_rectangle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/intermediate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/updateevent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/why.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/why.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbapp/migrations/0006_auto_20200424_0520.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbapp/migrations/0007_auto_20200424_0520.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbapp/migrations/0008_auto_20200424_0528.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/3ZB0c7_K0E8_Full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/3ZB0c7_K0E8_Full_bmGIipy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/img/1550069523388.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/img/3ZB0c7_K0E8_Full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/img/3ZB0c7_K0E8_Full_MZaZj2g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/img/75274_venom.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/eventlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eventlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_IlTycfS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_clwHeJV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/3691_Screenshot_20191017-222624_Quickstep_jxwJpPE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/41152_U1568778488.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Abstract sunset2792_rectangle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/intermediate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/intermediate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registerevent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registerevent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/updateevent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/updateevent.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/why/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/why/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,19 +75,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/htmlapp/templates" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Shrey\PycharmProjects\why\htmlapp\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Shrey\PycharmProjects\why\static" />
       <recent name="C:\Users\Shrey\PycharmProjects\why\htmlapp\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Shrey\PycharmProjects\why\htmlapp\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,7 +157,21 @@
       <workItem from="1584068778899" duration="7100000" />
       <workItem from="1584104022787" duration="2045000" />
       <workItem from="1584120551512" duration="630000" />
-      <workItem from="1584160925635" duration="18384000" />
+      <workItem from="1584160925635" duration="19043000" />
+      <workItem from="1584261331877" duration="1097000" />
+      <workItem from="1584423559604" duration="1541000" />
+      <workItem from="1584434593003" duration="1210000" />
+      <workItem from="1584436256848" duration="114000" />
+      <workItem from="1584436396366" duration="22000" />
+      <workItem from="1584437056862" duration="414000" />
+      <workItem from="1584455666565" duration="2216000" />
+      <workItem from="1584461285602" duration="603000" />
+      <workItem from="1584523049621" duration="761000" />
+      <workItem from="1584523979499" duration="970000" />
+      <workItem from="1584923830747" duration="69000" />
+      <workItem from="1587381047444" duration="3265000" />
+      <workItem from="1587455035915" duration="234000" />
+      <workItem from="1587683465078" duration="2960000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583673917812</created>
@@ -175,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583946087579</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first commit">
+      <created>1584185494938</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584185494938</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
